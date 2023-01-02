@@ -48,11 +48,12 @@ header {
     height: 100vh;
 }
 
-#text {
+#portrait {
     position: relative;
-    font-size: 5em;
-    color: #333;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2)
+    max-width: 15vw;
+    height: auto;
+    border-radius: 5px;
+    border-color: blue;
 }
 
 .parallax img {

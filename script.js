@@ -1,10 +1,11 @@
-let text = document.getElementById('text');
+let portrait = document.getElementById('portrait');
 let foreground = document.getElementById('foreground');
 let background = document.getElementById('background');
 let lighting = document.getElementById('lighting');
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
-
-    text.style.marginTop = value * 3 + 'px';
+    portrait.style.marginTop = value * 3 + 'px';
+    background.style.top = value * 0.75 + 'px'
 })
+
