@@ -16,9 +16,9 @@ body {
 header {
     position: absolute;
     top: 1vh;
-    left: 0;
+    left: 37.5vw;
     width: 100%;
-    padding: 30px 100px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,17 +27,20 @@ header {
 
 .navigation a {
     text-decoration: none;
-    color: #88c7dc;
-    padding: 6px 15px;
-    border-radius: 20px;
+    color: #144898;
+    padding: 6px 20px;
+    border-radius: 30px;
     margin: 0 10px;
     font-weight: 600;
+    font-size: 32px;
+    top: 0;
 }
 
 .navigation a:hover, 
 .navigation a.active {
-    background: #88c7dc;
-    color: #f9f9f9
+    background: #144898;
+    /* light blue: #88c7dc*/
+    color: #f9f9f9;
 }
 
 .parallax {
@@ -48,13 +51,42 @@ header {
     height: 100vh;
 }
 
+#about{
+    position: relative;
+    top: -15vh;
+}
+
+#about-content{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#name {
+    position: relative;
+    text-align: center;
+    font-size: 3.5vw;
+    color: #333;
+}
+
 #portrait {
     position: relative;
     max-width: 15vw;
     height: auto;
-    border-radius: 5px;
-    border-color: blue;
+    border-radius: 250px;
 }
+
+#about-wrapper {
+    position: relative;
+    padding: 1vw;
+}
+
+.intro {
+    max-width: 20vw;
+    font-size: 0.7vw;
+}
+
 
 .parallax img {
     position: absolute;
@@ -63,10 +95,14 @@ header {
     width: 100%;
     height: 101%;
     pointer-events: none;
+    object-fit: cover;
 }
 
 .sec {
-    position: relative;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
     background: #054d86;
     padding: 100px;
 }
+
