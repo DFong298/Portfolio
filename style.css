@@ -9,10 +9,10 @@
 
 html {
     scroll-behavior: smooth;
-   }
+}
 
 body {
-    background: #f9f9f9;
+    background: #054d86;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -21,15 +21,21 @@ body {
 /* Navigation buttons */
 header {
     position: absolute;
-    top: 1em;
-    left: 60em;
+    /*top: 1em;
+    left: 60em;*/
+    right: 0;
     width: 100%;
     padding: 30px;
-    display: flex;
     justify-content: center;
-    align-items: center;
     z-index: 100; 
+    display: block;
 }
+
+.navigation {
+    position: relative;
+    float: right;
+}
+
 
 .navigation a {
     text-decoration: none;
@@ -118,7 +124,8 @@ header {
 
 #projects-section {
     width: 100%;
-    height: 95vh;
+    height: auto;
+    min-height: 95vh;
     position: absolute;
     background: #054d86;
     padding: 100px;
@@ -148,21 +155,37 @@ header {
     position: relative;
     width: 20em;
     height: 20em;
-    background-color: #f9f9f9;
+    background-color: #d3edfd;
     border-radius: 5px;
     overflow: hidden;
     margin: 1.5em 2em 1.5em 2em;
 }
+
+.logos {
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
   
 .project-title {
-    display: block;
-    width: 100%;
-    height: auto;
-    font-weight: 600;
-    font-size: 20px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    top: 46%;
-    position: relative;
+    width: 10em;
+    height: 300px;
+    font-weight: 600;
+    font-size: 24px;
+    
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .overlay {
@@ -198,6 +221,10 @@ header {
     position: absolute;
     bottom: 5px;
     right: 8px;
-    color: white
 }
 
+.project-link {
+    position: absolute;
+    bottom: 5px;
+    right: 50px;
+}

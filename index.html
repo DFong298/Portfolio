@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/7adf59eb19.js" crossorigin="anonymous"></script>
+        <script src="particles.js"></script>
         <title>Dennis Fong</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -13,6 +14,7 @@
 
     <body>
 
+        <!--NAV-->
         <header>
             <nav class="navigation">
                 <a href="#">About Me</a>
@@ -21,14 +23,14 @@
             </nav>
         </header>
 
+        <!--MAIN-->
         <section class="parallax">
-            <img src="lighting2.png" id="lighting">
-            <img src="background2.png" id="background">
+            <img src="assets/lighting2.png" id="lighting">
+            <img src="assets/background2.png" id="background">
             <section id="about">
                 <p id="name">DENNIS FONG</p>
                 <section id="about-content">
-                    <img src="me.png" id="portrait">
-
+                    <img src="assets/me.png" id="portrait">
                     <div id="about-wrapper">
                         <h2 style="font-size: 2em">Greetings!</h2>
                         <p class="intro">I'm a third year student studying Software Engineering at McMaster University and a quantitative analyst for the DeGroote Finance and Investment Council (DFIC). My main interests are machine learning and full stack development.</p>
@@ -42,14 +44,17 @@
                     </div>
                 </section>
             </section>
-            <img src="foreground2.png" id="foreground">
+            <img src="assets/foreground2.png" id="foreground">
         </section>
 
+        <!--PROJECTS-->
         <div id="projects-section">
             <h2 id="proj-header"> Projects</h2>
 
+            <!--TOP ROW-->
             <div id="projects-top-row">
 
+                <!--LSTM-->
                 <div class="project">
                     <p class="project-title">LSTM Stock Price Predictor</p>
                     <section class="overlay">
@@ -59,21 +64,23 @@
                       </section>
                     </section>
                 </div>
-    
+                
+                <!--CHATBOT-->
                 <div class="project">
-                    <p class="project-title">Track.it</p>
+                    <p class="project-title">Self.Discord()</p>
                     <section class="overlay">
-                      <div class="description">A full stack stock tracking app with no limits</div>
+                      <div class="description">A discord bot trained to read messages and respond to them in a way that I would. (Coming soon)</div>
                       <section class="github-link">
                         <a href="https://github.com/DFong298" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-github fa-2x" style="color: #333; text-decoration: none"></a>
                       </section>
                     </section>
-                    
                 </div>
+
+                <!--NLP-->
                 <div class="project">
-                    <p class="project-title">Track.it</p>
+                    <p class="project-title">Headline Reader</p>
                     <section class="overlay">
-                      <div class="description">A full stack stock tracking app with no limits</div>
+                      <div class="description">A machine learning model that reads the headline of a financial news article to guess the sentiment of it. (Coming soon)</div>
                       <section class="github-link">
                         <a href="https://github.com/DFong298" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-github fa-2x" style="color: #333; text-decoration: none"></a>
                       </section>
@@ -81,32 +88,42 @@
                 </div>
             </div>
 
+            <!--BOTTOM ROW-->
             <div id="projects-bottom-row">
 
+                <!--TRACK.IT-->
                 <div class="project">
-                    <p class="project-title">LSTM Stock Price Predictor</p>
+                    <img src="assets/tracklogo.svg" class="logos" style="max-width: 50%">
+                    <p class="project-title">Track.it</p>
                     <section class="overlay">
-                      <div class="description">A machine learning model that predicts a stocks next day price, given the price of the previous days</div>
+                      <div class="description">A full stack app to track theoretical stock portfolios. No limits.</div>
                       <section class="github-link">
-                        <a href="https://github.com/DFong298" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-github fa-2x" style="color: #333; text-decoration: none"></a>
+                        <a href="https://github.com/DFong298/Track.it" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-github fa-2x" style="color: #333; text-decoration: none"></a>
                       </section>
                     </section>
-                    
                 </div>
+                
     
+                <!--DELIGHT-->
                 <div class="project">
-                    <p class="project-title">Track.it</p>
+                    <img src="assets/DelightLogo.png" class="logos">
+                    <p class="project-title">Delight</p>
                     <section class="overlay">
-                      <div class="description">A full stack stock tracking app with no limits</div>
+                      <div class="description">Front end app for calculating profits and losses of options expiring weekly.</div>
+                      <section class="project-link">
+                        <a href="https://dfong298.github.io/Delight/" target="_blank" rel="noopener noreferrer" class="fa fa-solid fa-link fa-2x" style="color: #333; text-decoration: none"></a>
+                      </section>
                       <section class="github-link">
-                        <a href="https://github.com/DFong298" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-github fa-2x" style="color: #333; text-decoration: none"></a>
+                        <a href="https://github.com/DFong298/Delight" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-github fa-2x" style="color: #333; text-decoration: none"></a>
                       </section>
                     </section>
                 </div>
+
+                <!--PATHFINDING-->
                 <div class="project">
-                    <p class="project-title">Track.it</p>
+                    <p class="project-title">London Tube Pathfinding</p>
                     <section class="overlay">
-                      <div class="description">A full stack stock tracking app with no limits</div>
+                      <div class="description">School project that applies </div>
                       <section class="github-link">
                         <a href="https://github.com/DFong298" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-github fa-2x" style="color: #333; text-decoration: none"></a>
                       </section>
