@@ -89,6 +89,8 @@ header {
     width: 25rem;
     height: auto;
     border-radius: 250px;
+    border-color:#c1e5fb;
+    border-width: 5px;
 }
 
 #about-wrapper {
