@@ -5,49 +5,84 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
         <script src="https://kit.fontawesome.com/7adf59eb19.js" crossorigin="anonymous"></script>
         <title>Dennis Fong</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+        <meta name="author" content="Dennis Fong">
+        <meta name="title" content="Dennis Fong">
+        <meta name="description" content="Software engineering student at McMaster University.">
+        <!--meta name="image" content="image_path/link">
+        <meta name="url" content="website_link"-->
+        <meta name="type" content="website">
+
+        <meta property="og:title" content="Dennis Fong">
+        <meta property="og:description" content="Software engineering student at McMaster University.">
+        <!--meta property="og:image" content="image_path/link">
+        <meta property="og:url" content="website_link"-->
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <!--link rel="stylesheet" href="css/global.css"-->
+        
     </head>
 
     <body>
+      <!--NAV-->
+      <nav>
+        <ul class="big-nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="Dennis_Fong_Resume.pdf">Resume</a></li>
+        </ul>
 
-        <!--NAV-->
-        <header>
-            <nav class="navigation">
-                <a href="#">About Me</a>
-                <a href="#projects-section">Projects</a>
-                <a href="#">Resume</a>
-            </nav>
-        </header>
+        <ul class="small-nav">
+          <li><a title="About" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+              <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 256h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zm256-32H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/>
+            </svg>
+          </a></li>
+          <li><a title="Projects" href="#projects-section">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
+              <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>
+            </svg>
+          </a></li>
+          <li><a title="Resume" href="/Dennis_Fong_Resume.pdf">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+              <path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H176c-35.3 0-64 28.7-64 64V512H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8H200c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40H200c-22.1 0-40-17.9-40-40V392c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H333.1c-7.2 0-13.1 5.9-13.1 13.1c0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2c0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1c0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2c0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66c10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/>
+            </svg>
+          </a></li>
+        </ul>
+      </nav>
 
-        <!--MAIN-->
+      <!--MAIN-->
+      <main>
+        <img src="assets/scenery2.png" class="parallax-img" id="background">
+        <article>
+
+      
+
+      
         <section class="parallax">
-            <img src="assets/lighting2.png" class="parallax-img" id="lighting">
-            <img src="assets/background2.png" class="parallax-img" id="background">
+            <!--img src="assets/lighting2.png" class="parallax-img" id="lighting"-->
+            <!--img src="assets/background2.png" class="parallax-img" id="background"-->
             
+
             <section id="about">
-                <p id="name">DENNIS FONG</p>
-                <section id="about-content">
-                    <div id="portrait-wrapper">
-                        <img src="assets/trial.png" id="portrait">
-                    </div>
-                  
-                    <div id="about-wrapper">
-                        <h2 style="font-size: 2em">Greetings!</h2>
-                        <p class="intro"> I'm a third year student studying Software Engineering at McMaster University and a quantitative analyst for the DeGroote Finance and Investment Council (DFIC). My main interests are machine learning and full stack development.</p>
-                        <br>
-                        <p class="intro">I'm currently looking for internship oppurtunities for Spring 2023 lasting either 4 months or 12 months.</p>
-                        <section id="links">
-                            <a href="https://github.com/DFong298" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-github fa-4x"></a>
-                            <a href="mailto: fongd1@mcmaster.ca" class="fa fa-regular fa-envelope fa-4x"></a>
-                            <a href="https://www.linkedin.com/in/dfong298/" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-linkedin fa-4x"></a>
-                        </section>
-                    </div>
-                </section>
+              <h1 class="text-center">Dennis Fong</h1>
+              <div class="flex-container fade">
+                <div class="flex-col flex-left">
+                  <img class="img-fluid" src="assets/me.png" alt="An image of me.">
+                </div>
+                <div class="flex-col flex-right">
+                  <p>
+                    I'm a third year student studying Software Engineering at McMaster University and a quantitative analyst for the DeGroote Finance and Investment Council (DFIC). 
+                    My main interests are machine learning and full stack development.<br>
+                  </p>
+                </div>
+              </div>
             </section>
-            <img src="assets/foreground2.png" class="parallax-img" class="foreground">
+            <!--img src="assets/foreground2.png" class="parallax-img" class="foreground"-->
         </section>
 
         <!--PROJECTS-->
@@ -87,7 +122,7 @@
                       <section class="github-link">
                         <a href="https://github.com/DFong298" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-github fa-2x" style="color: #333; text-decoration: none"></a>
                       </section>
-                    </section>
+                    </section> 
                 </div>
             </div>
 
@@ -137,5 +172,7 @@
         </div>
 
         <script src="script.js"></script>
+      </article>
+    </main>
     </body>
 </html>
