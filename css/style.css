@@ -125,50 +125,48 @@ header {
 }
 
 .parallax-img {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: fixed;
     max-width: 100%;
-    min-height: 101%;
+    min-height: 100%;
     pointer-events: none;
     object-fit: cover;
+    z-index: -1;
 }
 
 #projects-section {
-    width: 100%;
-    height: auto;
-    min-height: 95vh;
-    position: relative;
-    /* padding: 100px; */
+    display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 
-#proj-header {
-    color: white;
-    text-align: center;
-    font-size: 4.5em;
-    position: relative;
-}
 
-#projects-top-row {
-    position: relative;
-    text-align: center;
-}
 
-#projects-bottom-row {
-    position: relative;
-    text-align: center;
-}
 
 .project {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 20em;
     height: 20em;
+    max-width: 20em;
+    max-height: 20em;
     background-color: #d3edfd;
-    border-radius: 5px;
+    flex-grow: 1;
+    border-radius: .5em;
+    transition: var(--transition);
     overflow: hidden;
+    text-align: center;
     margin: 1.5em 2em 1.5em 2em;
+}
+
+@media screen and (max-width: 440px){
+    .project {
+        max-width:17em;
+        height:17em;
+        margin: 1em 1em 1em 1em;
+    }
 }
 
 .logos {
@@ -207,7 +205,6 @@ header {
     width: 100%;
     background-color: #c1e5fb;
     overflow: hidden;
-    
     height: 100%;
     transition: .5s ease;
 }
@@ -283,20 +280,60 @@ header {
 	#about img {
 		width: 66%;
 	}
-    .text-center{
+}
+
+@media screen and (max-width: 620px) {
+    .text-center {
+        position: relative;
+        color: #333;
+        text-align: center;
         font-size: 2rem;
+        font-weight: 500;
     }
 }
 
 article, footer {
 	margin: 0 auto;
 	padding: 1.5em;
-	max-width: 100ch;
+	max-width: 120ch;
 }
 
-.text-center {
-    color: #333;
-	text-align: center;
-    font-size: 4rem;
-    font-weight: 500;
+@media screen and (min-width: 620px) {
+
+    .text-center {
+        position: relative;
+        color: #333;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 440px){
+    #proj-header {
+        color: #333;
+        text-align: center;
+        font-size: 4em;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 440px){
+    #proj-header {
+        color: #333;
+        text-align: center;
+        font-size: 3em;
+        position: relative;
+        margin: 20px;
+    }
+}
+
+.link {
+    color:black
+}
+
+#contact {
+    text-align: center;
+    margin: 100px;
+    min-width: 15em;
 }

@@ -86,11 +86,30 @@
         </section>
 
         <!--PROJECTS-->
-        <div id="projects-section">
-            <h2 id="proj-header"> Projects</h2>
+        <section id="projects">
 
+          <h2 id="proj-header"> Things I've worked on</h2>
+          <div id="projects-section">
+            
+
+
+            <style>
+              /* overrides selector in body.css */
+              .projects-section {
+                  flex-direction: row-reverse !important;
+                  flex-wrap: wrap-reverse !important;
+              }
+
+              /* there has to be a better way to do this 🤷‍♂️ */
+              .projects-section > .project:nth-of-type(1) { order: 6; }
+              .projects-section > .project:nth-of-type(2) { order: 5; }
+              .projects-section > .project:nth-of-type(3) { order: 4; }
+              .projects-section > .project:nth-of-type(4) { order: 3; }
+              .projects-section > .project:nth-of-type(5) { order: 2; }
+              .projects-section > .project:nth-of-type(6) { order: 1; }
+          </style>
+          
             <!--TOP ROW-->
-            <div id="projects-top-row">
 
                 <!--LSTM-->
                 <div class="project">
@@ -124,10 +143,8 @@
                       </section>
                     </section> 
                 </div>
-            </div>
 
             <!--BOTTOM ROW-->
-            <div id="projects-bottom-row">
 
                 <!--TRACK.IT-->
                 <div class="project">
@@ -167,9 +184,19 @@
                     </section>
                 </div>
             </div>
+          </section>
+
+          <section id="contact-section">
+            <div id="contact">
+              <h3>Get in touch</h3>
+              <a href="https://github.com/DFong298" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-github fa-4x link"></a>
+              <a href="mailto: fongd1@mcmaster.ca" class="fa fa-regular fa-envelope fa-4x link"></a>
+              <a href="https://www.linkedin.com/in/dfong298/" target="_blank" rel="noopener noreferrer" class="fa fa-brands fa-linkedin fa-4x link"></a>
+            </div>
+            
+          </section>
             
               
-        </div>
 
         <script src="script.js"></script>
       </article>
