@@ -207,6 +207,10 @@ header {
     transform: translate(-100%, 0%);
 }
 
+.project:active .overlay {
+    transform: translate(-100%, 0%);
+}
+
 .description {
     color: white;
     font-size: 20px;
