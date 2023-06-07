@@ -3,13 +3,13 @@ html {
 }
 
 nav {
-	position: absolute;
-	padding: 1em 1.5em;
+	position: relative;
+	padding: 2em 3em;
 	line-height: 2rem;
 	font-size: 1.1rem;
 	margin: 0 auto;
 	left: 0;
-	right: 0;
+	right: 10px;
 	z-index: 1000;
 	display: flex;
 	align-items: center;
@@ -43,7 +43,7 @@ nav li {
 
 
 nav a {
-	color: inherit;
+	color: #144898;
 	text-decoration: none;
 	cursor: pointer;
 	position: relative;
@@ -53,8 +53,8 @@ nav a {
 
 nav a:focus-visible,
 nav a:hover {
-	color: var(--col-link-hover);
-	background-color: #add8e6;
+	color: #333;
+	text-decoration: underline;
 }
 
 nav a::before {
@@ -108,11 +108,18 @@ nav ul.small-nav a:hover svg {
 	transition: var(--transition);
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 830px) {
 	nav > ul.big-nav {
 		display: none;
 	}
 	nav > ul.small-nav {
 		display: flex;
+	}
+	nav {
+		padding: 1em 2em;
+	}
+
+	nav li {
+		padding-left: 1em;
 	}
 }
