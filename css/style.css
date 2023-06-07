@@ -338,7 +338,6 @@ article, footer {
 }
 
 .link {
-    color:black;
     padding: 20px;
     text-decoration: none;
     color: white;
@@ -358,6 +357,10 @@ article, footer {
 .svg-link {
     display: inline-block;
 	position: relative;
+}
+
+.link:hover {
+    color: #c1e5fb
 }
 
 #contact-content {
