@@ -166,7 +166,7 @@ header {
 .logos {
     justify-content: center;
     position: absolute;
-    top: 50px;
+    top: 90px;
     left: 0; 
     right: 0; 
     margin-left: auto; 
@@ -374,5 +374,15 @@ article, footer {
 @media screen and (max-height: 800px) {
     #contact-content {
         color: #333
+    }
+}
+
+.about-text{
+    font-size: 1.3em;
+}
+
+@media screen and (max-width: 600px) {
+    .about-text {
+        font-size: 1em
     }
 }
