@@ -136,11 +136,24 @@ header {
 
 #projects-section {
     width: 100%;
+    margin:auto;
     height: auto;
+    align-content: center;
     min-height: 95vh;
     position: absolute;
+    
     background: #054d86;
     /* padding: 100px; */
+}
+
+#projects-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:auto;
 }
 
 
