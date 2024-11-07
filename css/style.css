@@ -1,3 +1,259 @@
+<<<<<<< HEAD:style.css
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background: #054d86; */
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* Navigation buttons */
+header {
+    position: absolute;
+    /*top: 1em;
+    left: 60em;*/
+    right: 0;
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+    z-index: 100; 
+    display: block;
+}
+
+.navigation {
+    position: relative;
+    float: right;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: #144898;
+    padding: 6px 20px;
+    border-radius: 30px;
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 28px;
+    top: 0;
+}
+
+.navigation a:hover {
+    background: #144898;
+    color: #f9f9f9;
+}
+
+
+/* parallax image layers */
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#about{
+    position: relative;
+    top: -15vh;
+    width: 70%;
+}
+
+#about-content{
+    justify-content: space-around;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+    width: 100%;
+}
+
+#name {
+    position: relative;
+    text-align: center;
+    font-size: 6em;
+    color: #333;
+}
+
+#portrait-wrapper {
+    width: 30%;
+}
+
+#portrait {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border-color:#c1e5fb;
+    border-width: 5px;
+}
+
+#about-wrapper {
+    position: relative;
+    width: 50%;
+    align-self: center;
+}
+
+.intro {
+    max-width: 30em;
+    /* font-size: 18px; */
+    font-size: 1.5em;
+    
+}
+
+#links {
+    position: relative;
+    text-align: center;
+}
+
+#links a{
+    margin: 2vw 2vw 0 2vw;
+    color: #333;
+   text-decoration: none;
+}
+
+.parallax-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 101%;
+    pointer-events: none;
+    object-fit: cover;
+}
+
+#projects-section {
+    width: 100%;
+    margin:auto;
+    height: auto;
+    align-content: center;
+    min-height: 95vh;
+    position: absolute;
+    
+    background: #054d86;
+    /* padding: 100px; */
+}
+
+#projects-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:auto;
+}
+
+
+#proj-header {
+    color: white;
+    text-align: center;
+    font-size: 4.5em;
+    position: relative;
+}
+
+#projects-top-row {
+    position: relative;
+    text-align: center;
+}
+
+#projects-bottom-row {
+    position: relative;
+    text-align: center;
+}
+
+.project {
+    display: inline-block;
+    position: relative;
+    width: 20em;
+    height: 20em;
+    background-color: #d3edfd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1.5em 2em 1.5em 2em;
+}
+
+.logos {
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+  
+.project-title {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 10em;
+    height: 300px;
+    font-weight: 600;
+    font-size: 24px;
+    
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.overlay {
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #c1e5fb;
+    overflow: hidden;
+    
+    height: 100%;
+    transition: .5s ease;
+}
+
+.project:hover .overlay {
+    transform: translate(-100%, 0%);
+}
+
+.description {
+    color: white;
+    font-size: 20px;
+    width: 10em;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.github-link {
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+}
+
+.project-link {
+    position: absolute;
+    bottom: 5px;
+    right: 50px;
+}
+=======
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -391,3 +647,4 @@ article, footer {
         font-size: 1em
     }
 }
+>>>>>>> d70090a816e94593f2a39b70efa4e36fde0ecbf5:css/style.css
